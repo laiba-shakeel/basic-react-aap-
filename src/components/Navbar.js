@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
-    <div className="navbarSty">
+    <div className="navbarSty mb-5">
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
           <Link to="/" className="navbar-brand">
