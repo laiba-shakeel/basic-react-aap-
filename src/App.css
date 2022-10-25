@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+
+.mainSlider{
+ width: 100%;
+ height: 50vh;
+}
+.slick-prev:before {
+  content: "<";
+  color: red;
+  font-size: 30px;
+}
+
+.slick-next:before {
+  content: ">";
+  color: red;
+  font-size: 30px;
+}
