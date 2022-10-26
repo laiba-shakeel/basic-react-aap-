@@ -2,42 +2,150 @@ import { Typography } from "@mui/material";
 import React from "react";
 import Slider from "../components/Slider";
 import Navbar from "../components/Navbar";
-import IconButton from '@mui/material/IconButton';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
-const options = [
-  'None',
-  'Atria',
-  'Callisto',
-  'Dione',
-  'Ganymede',
-  'Hangouts Call',
-  'Luna',
-  'Oberon',
-  'Phobos',
-  'Pyxis',
-  'Sedna',
-  'Titania',
-  'Triton',
-  'Umbriel',
-];
-
-const ITEM_HEIGHT = 48;
+import { Box } from "@mui/system";
+import {
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+} from "@mui/material";
+import {
+  AccountBox,
+  Article,
+  Group,
+  Home,
+  ModeNight,
+  Person,
+  Settings,
+  Storefront,
+} from "@mui/icons-material";
 
 export default function Mobile() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
   return (
     <div>
       <Navbar />
-      <div className="container">
+      <div className="d-flex" >
+          <Box>
+            <Box className="d-none d-md-block">
+              <List>
+                <ListItem disablePadding>
+                  <ListItemButton component="a" href="#home">
+                    <ListItemIcon>
+                      <Home />
+                    </ListItemIcon>
+                    <ListItemText primary="Homepage" />
+                  </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                  <ListItemButton component="a" href="#Pages">
+                    <ListItemIcon>
+                      <Article />
+                    </ListItemIcon>
+                    <ListItemText primary="Pages" />
+                  </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                  <ListItemButton component="a" href="#groups">
+                    <ListItemIcon>
+                      <Group />
+                    </ListItemIcon>
+                    <ListItemText primary="Groups" />
+                  </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                  <ListItemButton component="a" href="#Marketing">
+                    <ListItemIcon>
+                      <Storefront />
+                    </ListItemIcon>
+                    <ListItemText primary="Marketing" />
+                  </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                  <ListItemButton component="a" href="#Friends">
+                    <ListItemIcon>
+                      <Person />
+                    </ListItemIcon>
+                    <ListItemText primary="Friends" />
+                  </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                  <ListItemButton component="a" href="#Setting">
+                    <ListItemIcon>
+                      <Settings />
+                    </ListItemIcon>
+                    <ListItemText primary="Setting" />
+                  </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                  <ListItemButton component="a" href="#Profile">
+                    <ListItemIcon>
+                      <AccountBox />
+                    </ListItemIcon>
+                    <ListItemText primary="Profile" />
+                  </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                  <ListItemButton component="a" href="/"></ListItemButton>
+                </ListItem>
+              </List>
+            </Box>
+          </Box>
+          <img
+          className="container py-5 img-fluid"
+            src="https://tpc.googlesyndication.com/simgad/5498342565225498542?sqp=4sqPyQQrQikqJwhfEAEdAAC0QiABKAEwCTgDQPCTCUgAUAFYAWBfcAJ4AcUBLbKdPg&rs=AOga4qmfybDIbdhxRbpbaz1TByInq3zD-w"
+            width="auto"
+            height="100%"></img>
+        </div>
+      <div className="container Cars mt-2 d-flex justify-content-center border shadow">
+        <div className="row">
+          <div className="col-3">
+            <div>
+              <img
+                src="https://cdn.jdpower.com/JDPA_2020%20Cadillac%20CT5%20Luxury%20Sedan.jpg"
+                alt=""
+                height="100%"
+                width="100%"
+              />
+            </div>
+          </div>
+          <div className="col-3">
+            {" "}
+            <div>
+              <img
+                src="https://cdn.jdpower.com/JDPA_2020%20Cadillac%20CT5%20Luxury%20Sedan.jpg"
+                alt=""
+                height="100%"
+                width="100%"
+              />
+            </div>
+          </div>
+          <div className="col-3">
+            {" "}
+            <div>
+              <img
+                src="https://cdn.jdpower.com/JDPA_2020%20Cadillac%20CT5%20Luxury%20Sedan.jpg"
+                alt=""
+                height="100%"
+                width="100%"
+              />
+            </div>
+          </div>
+          <div className="col-3">
+            {" "}
+            <div>
+              <img
+                src="https://cdn.jdpower.com/JDPA_2020%20Cadillac%20CT5%20Luxury%20Sedan.jpg"
+                alt=""
+                height="100%"
+                width="100%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container py-5">
         <div className="img">
           <img
             src="https://tpc.googlesyndication.com/simgad/11727365248570226062?sqp=4sqPyQQ7QjkqNxABHQAAtEIgASgBMAk4A0DwkwlYAWBfcAKAAQGIAQGdAQAAgD-oAQGwAYCt4gS4AV_FAS2ynT4&rs=AOga4qkG757jb5bJXnofBsOQm7sOT1jyAg"
@@ -72,50 +180,7 @@ export default function Mobile() {
           }}>
           <h4>Mobile-Phones</h4>
         </Typography>
-        <Typography >
-          <div className="row">
-            <div className="col-lg-3 d-flex p-3 fw-bold"><p>Filters</p> 
-            <div>
-      <IconButton
-        aria-label="more"
-        id="long-button"
-        aria-controls={open ? 'long-menu' : undefined}
-        aria-expanded={open ? 'true' : undefined}
-        aria-haspopup="true"
-        onClick={handleClick}
-      >
-        <MoreVertIcon />
-      </IconButton>
-      <Menu
-        id="long-menu"
-        MenuListProps={{
-          'aria-labelledby': 'long-button',
-        }}
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-        PaperProps={{
-          style: {
-            maxHeight: ITEM_HEIGHT * 4.5,
-            width: '20ch',
-          },
-        }}
-      >
-        {options.map((option) => (
-          <MenuItem key={option} selected={option === 'Pyxis'} onClick={handleClose}>
-            {option}
-          </MenuItem>
-        ))}
-      </Menu>
-    </div>
-            </div>
-            <div className="col-lg-2">
-              
-            </div>
-            <div className="col-lg-7">item3</div>
-            <div></div>
-          </div>
-        </Typography>
+       
       </div>
     </div>
   );
