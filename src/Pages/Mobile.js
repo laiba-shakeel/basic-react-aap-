@@ -15,15 +15,16 @@ import {
   Article,
   Group,
   Home,
-  ModeNight,
   Person,
   Settings,
   Storefront,
 } from "@mui/icons-material";
+import Header from "../components/Header";
 
 export default function Mobile() {
   return (
     <div>
+      <Header/>
       <Navbar />
       <div className="d-flex" >
           <Box>
@@ -95,7 +96,8 @@ export default function Mobile() {
           className="container py-5 img-fluid"
             src="https://tpc.googlesyndication.com/simgad/5498342565225498542?sqp=4sqPyQQrQikqJwhfEAEdAAC0QiABKAEwCTgDQPCTCUgAUAFYAWBfcAJ4AcUBLbKdPg&rs=AOga4qmfybDIbdhxRbpbaz1TByInq3zD-w"
             width="auto"
-            height="100%"></img>
+            height="100%"
+            alt="img"></img>
         </div>
       <div className="container Cars mt-2 d-flex justify-content-center border shadow">
         <div className="row">

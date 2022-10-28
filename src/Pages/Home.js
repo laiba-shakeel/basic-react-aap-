@@ -1,6 +1,8 @@
 import React from "react";
+import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import Post from "../components/Post";
+import Search from "../components/Search";
 
 export default function Home() {
   let posts = [
@@ -63,7 +65,10 @@ export default function Home() {
 
   return (
     <div>
-      <Navbar />
+      <Header/>
+      <Search/>
+      <Navbar/>
+      <div><img src="https://images.olx.com.pk/thumbnails/298083045-800x600.webp" alt="" /></div>
       <div style={{ display: "flex", justifyContent: "space-evenly" }}>
         <div
           className="row">
