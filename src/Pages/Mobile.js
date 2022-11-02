@@ -20,13 +20,15 @@ import {
   Storefront,
 } from "@mui/icons-material";
 import Header from "../components/Header";
+import Search from "../components/Search";
 
 export default function Mobile() {
   return (
     <div>
       <Header/>
+      <Search/>
       <Navbar />
-      <div className="d-flex" >
+      {/* <div className="d-flex" >
           <Box>
             <Box className="d-none d-md-block">
               <List>
@@ -98,7 +100,7 @@ export default function Mobile() {
             width="auto"
             height="100%"
             alt="img"></img>
-        </div>
+        </div> */}
       <div className="container Cars mt-2 d-flex justify-content-center border shadow">
         <div className="row">
           <div className="col-3">

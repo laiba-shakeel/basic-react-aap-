@@ -53,4 +53,6 @@
   color: red;
   font-size: 30px;
 }
-
+ body {
+  overflow: auto;
+ }

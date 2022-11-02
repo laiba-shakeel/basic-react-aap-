@@ -5,7 +5,7 @@ import { Logo, SearchBar, SearchMenu, ParentSearch, ParentSearchMenu, SellButton
 const Search = () => {
   return (
     <>
-      <AppBar
+      <AppBar className="container"
         sx={{
           backgroundColor: "rgb(0 0 0 / 0%)",
           position: "relative",
