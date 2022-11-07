@@ -25,6 +25,7 @@ import Search from "../components/Search";
 export default function Mobile() {
   return (
     <div>
+
       <Header/>
       <Search/>
       <Navbar />
@@ -175,16 +176,50 @@ export default function Mobile() {
             <p className="p-2">Vivo</p>
           </Typography>
         </div>
-        <Slider />
+        {/* <Slider /> */}
+        <Typography
+        sx={{
+          display: 'flex',
+          flexFlow: 'right',
+          padding: '2px',
+          margin: '3px'
+
+        }}>
+        <p><u>Home</u> / <u>Mobiles</u></p>
+        </Typography>
         <Typography
           sx={{
             display: "flex",
             flexFlow: "right",
-            marginTop: "6%",
+            marginTop: "1%",
+            marginBottom: '2%'
           }}>
-          <h4>Mobile-Phones</h4>
+          <h4><u>Mobile-Phones</u></h4>
         </Typography>
-       
+        <div className="d-flex m-">
+        <Typography sx={{
+          border: '2px solid red',
+          width: '30%',
+          height: "70vh",
+          display: 'flex',
+          flexFlow: 'right',
+          padding: '10px'
+        }}>
+          <p className="fw-bold">filters</p>
+        </Typography>
+        <Typography
+        sx={{
+          border: '2px solid red',
+          width: '30%',
+          height: "70vh",
+          display: 'flex',
+          flexFlow: 'right',
+          padding: '10px'
+        }}
+        >
+
+        </Typography>
+        </div>
       </div>
     </div>
   );
