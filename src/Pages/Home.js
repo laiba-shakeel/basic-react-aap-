@@ -5,6 +5,8 @@ import Navbar from "../components/Navbar";
 import Post from "../components/Post";
 import Search from "../components/Search";
 import AutoSlider from "../components/AutoSlider";
+import GoToTop from "../components/GoToTop";
+import TagGetApps from "../components/TagGetApps";
 export default function Home() {
   let posts = [
     {
@@ -122,12 +124,17 @@ export default function Home() {
       <AutoSlider />
       <div className="container mt-3 mb-5">
         <img
+        style={{
+          width: "100%"
+        }}
           src="https://tpc.googlesyndication.com/daca_images/simgad/5535435080524246381"
           alt=""></img>
       </div>
 
-      <div style={{ display: "flex", justifyContent: "space-evenly" }}>
-        <div className="row">
+      <div style={{ display: "flex", justifyContent: "space-evenly", width:"100%" }}>
+        <div className="row" style={{
+          width: "100%"
+        }}>
           {posts.map((post, idx) => (
             <Post key={idx} data={post} />
           ))}
@@ -136,8 +143,13 @@ export default function Home() {
       <div className="container mt-3 mb-5">
         <img
           src="https://tpc.googlesyndication.com/simgad/5498342565225498542?sqp=4sqPyQQrQikqJwhfEAEdAAC0QiABKAEwCTgDQPCTCUgAUAFYAWBfcAJ4AcUBLbKdPg&rs=AOga4qmfybDIbdhxRbpbaz1TByInq3zD-w"
-          alt=""></img>
+          alt=""
+          style={{
+            width: "100%"
+          }}></img>
       </div>
+      <GoToTop/>
+      <TagGetApps/>
      </div>
 
   );
