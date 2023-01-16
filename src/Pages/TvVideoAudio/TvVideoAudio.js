@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+import Navbar from '../../Section/Navbar/Navbar'
 
 export default function Tv() {
   return (

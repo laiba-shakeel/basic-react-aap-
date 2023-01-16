@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Home from "../Pages/Home";
-import About from "../Pages/About";
-import Mobile from "../Pages/Mobile";
-import Cars from "../Pages/Cars";
-import Houses from "../Pages/Houses";
-import LandScape from "../Pages/LandsPlots";
-import Tablets from "../Pages/Tablets";
-import Tv from "../Pages/TvVideoAudio";
+import Home from "../Pages/Home/Home";
+import About from "../Pages/About/About";
+import Mobile from "../Pages/Mobile/Mobile";
+import Cars from "../Pages/Cars/Cars";
+import Houses from "../Pages/Houses/Houses";
+import LandScape from "../Pages/LandsPlot/LandsPlots";
+import Tablets from "../Pages/Tablets/Tablets";
+import Tv from "../Pages/TvVideoAudio/TvVideoAudio";
 export default function Navigation() {
   return (
     <>

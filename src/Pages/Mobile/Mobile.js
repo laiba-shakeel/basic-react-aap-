@@ -1,26 +1,8 @@
 import { Typography } from "@mui/material";
 import React from "react";
-import Slider from "../components/Slider";
-import Navbar from "../components/Navbar";
-import { Box } from "@mui/system";
-import {
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
-} from "@mui/material";
-import {
-  AccountBox,
-  Article,
-  Group,
-  Home,
-  Person,
-  Settings,
-  Storefront,
-} from "@mui/icons-material";
-import Header from "../components/Header";
-import Search from "../components/Search";
+import Navbar from "../../Section/Navbar/Navbar";
+import Header from "../../Section/Header";
+import Search from "../../Section/Search";
 
 export default function Mobile() {
   return (
@@ -29,79 +11,6 @@ export default function Mobile() {
       <Header/>
       <Search/>
       <Navbar />
-      {/* <div className="d-flex" >
-          <Box>
-            <Box className="d-none d-md-block">
-              <List>
-                <ListItem disablePadding>
-                  <ListItemButton component="a" href="#home">
-                    <ListItemIcon>
-                      <Home />
-                    </ListItemIcon>
-                    <ListItemText primary="Homepage" />
-                  </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemButton component="a" href="#Pages">
-                    <ListItemIcon>
-                      <Article />
-                    </ListItemIcon>
-                    <ListItemText primary="Pages" />
-                  </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemButton component="a" href="#groups">
-                    <ListItemIcon>
-                      <Group />
-                    </ListItemIcon>
-                    <ListItemText primary="Groups" />
-                  </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemButton component="a" href="#Marketing">
-                    <ListItemIcon>
-                      <Storefront />
-                    </ListItemIcon>
-                    <ListItemText primary="Marketing" />
-                  </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemButton component="a" href="#Friends">
-                    <ListItemIcon>
-                      <Person />
-                    </ListItemIcon>
-                    <ListItemText primary="Friends" />
-                  </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemButton component="a" href="#Setting">
-                    <ListItemIcon>
-                      <Settings />
-                    </ListItemIcon>
-                    <ListItemText primary="Setting" />
-                  </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemButton component="a" href="#Profile">
-                    <ListItemIcon>
-                      <AccountBox />
-                    </ListItemIcon>
-                    <ListItemText primary="Profile" />
-                  </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemButton component="a" href="/"></ListItemButton>
-                </ListItem>
-              </List>
-            </Box>
-          </Box>
-          <img
-          className="container py-5 img-fluid"
-            src="https://tpc.googlesyndication.com/simgad/5498342565225498542?sqp=4sqPyQQrQikqJwhfEAEdAAC0QiABKAEwCTgDQPCTCUgAUAFYAWBfcAJ4AcUBLbKdPg&rs=AOga4qmfybDIbdhxRbpbaz1TByInq3zD-w"
-            width="auto"
-            height="100%"
-            alt="img"></img>
-        </div> */}
       <div className="container Cars mt-2 d-flex justify-content-center border shadow">
         <div className="row">
           <div className="col-3">

@@ -4,7 +4,7 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
-import Navigation from "./Navigation";
+import Navigation from "./Routes";
 
 function App() {
 

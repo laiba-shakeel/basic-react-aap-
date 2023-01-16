@@ -1,12 +1,12 @@
 import React from "react";
 
-import Header from "../components/Header";
-import Navbar from "../components/Navbar";
-import Post from "../components/Post";
-import Search from "../components/Search";
-import AutoSlider from "../components/AutoSlider";
-import GoToTop from "../components/GoToTop";
-import TagGetApps from "../components/TagGetApps";
+import Header from "../../Section/Header";
+import Navbar from "../../Section/Navbar/Navbar";
+import Post from "../../Section/Post/Post";
+import Search from "../../Section/Search";
+import AutoSlider from "../../Section/AutoSlider/AutoSlider";
+import GoToTop from "../../Section/GoToTop/GoToTop";
+import TagGetApps from "../../Section/TagGetApp/TagGetApps";
 export default function Home() {
   let posts = [
     {
@@ -150,6 +150,7 @@ export default function Home() {
       </div>
       <GoToTop/>
       <TagGetApps/>
+      
      </div>
 
   );
